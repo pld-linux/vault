@@ -38,6 +38,8 @@ ln -s ../../.. src/%{import_path}
 %build
 export GOPATH=$(pwd)
 
+base=%{import_path}/version
+LDFLAGS="-X $base.Version=%{version} -X $base.VersionPrerelease=%{release}"
 %gobuild -o bin/%{name}
 
 %install
