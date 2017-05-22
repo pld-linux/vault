@@ -7,12 +7,12 @@
 
 Summary:	A tool for managing secrets
 Name:		vault
-Version:	0.6.3
+Version:	0.7.2
 Release:	1
 License:	MPL-2.0
 Group:		Applications/System
 Source0:	https://github.com/hashicorp/vault/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	13e8bce4b15cc97e6131e3bb2d5f5cd9
+# Source0-md5:	4756f2cc4c039627ff5740078a164108
 URL:		https://vaultproject.io/
 BuildRequires:	golang >= 1.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
